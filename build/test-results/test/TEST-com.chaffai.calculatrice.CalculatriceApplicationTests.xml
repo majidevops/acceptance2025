@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.chaffai.calculatrice.CalculatriceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-11-05T11:54:10" hostname="master" time="3.172">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.chaffai.calculatrice.CalculatriceApplicationTests" time="3.172"/>
+  <system-out><![CDATA[12:54:00.480 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.chaffai.calculatrice.CalculatriceApplicationTests]: CalculatriceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:54:01.683 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.chaffai.calculatrice.CalculatriceApplication for test class com.chaffai.calculatrice.CalculatriceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-11-05T12:54:05.499+01:00  INFO 80921 --- [calculatrice] [    Test worker] c.c.c.CalculatriceApplicationTests       : Starting CalculatriceApplicationTests using Java 17.0.12 with PID 80921 (started by mj in /home/mj/acceptance2025)
+2024-11-05T12:54:05.508+01:00  INFO 80921 --- [calculatrice] [    Test worker] c.c.c.CalculatriceApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-11-05T12:54:10.724+01:00  INFO 80921 --- [calculatrice] [    Test worker] c.c.c.CalculatriceApplicationTests       : Started CalculatriceApplicationTests in 7.52 seconds (process running for 22.403)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
