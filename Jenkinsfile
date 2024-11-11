@@ -1,23 +1,22 @@
 pipeline {
-     agent any
-     stages {
-         stage("Package") {
-    steps {
-        sh "./gradlew build"
-        
+    agent any
+    stages {
+        stage("Package") {
+            steps {
+                sh "./gradlew build"
+            }
+        }
+        stage("Docker build") {
+            steps {
+                // Correctly tag the image
+                sh "docker build -t localhost:5000/calculatrice ."
+            }
+        }
+        stage("Docker push") {
+            steps {
+                sh "docker push localhost:5000/calculatrice"
+            }
+        }
     }
 }
-stage("Docker build") {
-    steps {
-        sh "docker build -t calculatrice ."
-        
-    }
-}
-stage("Docker push") {
-    steps {
-        sh "docker push localhost:5000/calculatrice"
-    }
-}
-       
-      }
-}
+
