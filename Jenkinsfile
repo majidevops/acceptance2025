@@ -18,10 +18,14 @@ pipeline {
             }
         }
         stage("Deploy to staging ou Déployer en préproduction") {
-          steps {
+            steps {
+                // Stop and remove the container if it's already running
+                sh "docker rm -f calculatrice || true"
+                
+                // Run the new container
                 sh "docker run -d --rm -p 8769:8080 --name calculatrice localhost:5000/calculatrice"
-    }
-}
+            }
+        }
     }
 }
 
